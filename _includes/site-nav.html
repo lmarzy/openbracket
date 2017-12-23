@@ -1,0 +1,9 @@
+<nav id="js-siteNav" class="c-siteNav">
+  <ul class="c-siteNav_items">
+    {% for link in site.data.site-nav %}
+    <li class="c-siteNav_item">
+        <a href="{{ link.url }}.html" class="c-siteNav_link">{{ link.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

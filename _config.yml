@@ -1,0 +1,35 @@
+# Jekyll Confit
+
+title: Open-Bracket blog
+author: Lee Marsden
+email: me@phz3.net
+year: 2017
+description: "Front end development blog of Lee Marsden containing posts, tips and tricks and examples"
+url: "http://www.openbracket.co.uk"
+twitter_username: phzthree
+github_username:  lmarzy
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+permalink: /posts/:categories/:title
+
+include: ["_pages"]
+
+# Exclude
+exclude:
+  - package.json
+  - README.md
+  - yarn.lock
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - assets
+  - yarn-error.log
+  - postcss.config.js
+  - webpack.config.babel.js
+
+# Keep
+keep_files:
+  - assets

@@ -1,0 +1,13 @@
+// ========================================================================
+// COMPONENTS/SITE-LOGO
+// ========================================================================
+
+.c-siteLogo {
+  font-family: Monaco, Courier New, monospace;
+  background-image: linear-gradient(to right, darken($col-b, 10), $col-c);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+
+  @include vr(22px, 2);
+}

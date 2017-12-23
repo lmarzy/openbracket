@@ -1,0 +1,14 @@
+// ========================================================================
+// LAYOUT/PAGE-HOME
+// ========================================================================
+
+.l-pageHome {
+  display: grid;
+  padding: spacer(3);
+  background: $col-d;
+
+  @include bp(20) {
+    grid-template-columns: 3fr 1fr;
+    grid-gap: spacer(3);
+  }
+}
