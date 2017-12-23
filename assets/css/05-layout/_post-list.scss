@@ -1,15 +1,13 @@
 // ========================================================================
-// LAYOUT/PAGE-HOME
+// LAYOUT/POST-LIST
 // ========================================================================
 
-.l-pageHome {
+.l-postList {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: spacer(3);
-  padding: spacer(3);
-  background: $col-d;
 
-  @include bp(20) {
-    grid-template-columns: 3fr 1fr;
+  @include bp(10) {
+    grid-template-columns: 1fr 1fr;
   }
 }

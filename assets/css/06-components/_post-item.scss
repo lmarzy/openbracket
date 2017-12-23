@@ -1,0 +1,26 @@
+// ========================================================================
+// COMPONENTS/POST-ITEM
+// ========================================================================
+
+.c-postItem {
+  padding: spacer(2);
+  background: white;
+  border-width: 1px;
+  border-style: solid;
+
+  &-html {
+    border-color: $col-html;
+  }
+
+  &-css {
+    border-color: $col-css;
+  }
+
+  &-js {
+    border-color: $col-js;
+  }
+
+  &-misc {
+    border-color: $col-misc;
+  }
+}
