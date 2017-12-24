@@ -1,2 +1,1 @@
-import './modules/burger/burger';
-
+import './modules/site-nav/site-nav';

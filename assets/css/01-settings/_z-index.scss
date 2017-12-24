@@ -1,10 +1,5 @@
 // ========================================================================
-// PARTIALS/HEADER
+// SETTINGS/Z-INDEX
 // ========================================================================
 
-.l-siteHeader {
-  position: relative;
-  display: flex;
-  padding-left: spacer(2);
-  z-index: index($z-index, header);
-}
+$z-index: header;

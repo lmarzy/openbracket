@@ -25,3 +25,15 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
+body {
+  transition: transform 300ms ease-in;
+
+  &.navActive {
+    transform: translateX(-80%);
+  }
+}
+
+main {
+  background: $col-d;
+}

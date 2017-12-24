@@ -19,7 +19,7 @@
     transform: translateY(-50%);
     background-color: $col-c;
     border-radius: 4px;
-    transition: transform 500ms 800ms ease-in;
+    transition: transform 300ms 300ms ease-in;
   }
 
   &::before,
@@ -31,7 +31,7 @@
     height: 4px;
     background-color: $col-b;
     border-radius: 4px;
-    transition: top 500ms 500ms ease-in, bottom 500ms 500ms ease-in, transform 500ms ease-in;
+    transition: top 300ms 300ms ease-in, bottom 300ms 300ms ease-in, transform 300ms ease-in;
   }
 
   &::before {
@@ -45,19 +45,19 @@
   &.isActive {
     .c-burger_line {
       transform: translateX(-200%);
-      transition: transform 500ms ease-in;
+      transition: transform 300ms ease-in;
     }
 
     &::before {
       top: 50%;
       transform: translateY(-50%) rotate(45deg);
-      transition: top 500ms ease-in, bottom 500ms ease-in, transform 600ms 500ms ease-in;
+      transition: top 300ms ease-in, bottom 300ms ease-in, transform 300ms 300ms ease-in;
     }
 
     &::after {
       bottom: 50%;
       transform: translateY(50%) rotate(-45deg);
-      transition: top 500ms ease-in, bottom 500ms ease-in, transform 600ms 500ms ease-in;
+      transition: top 300ms ease-in, bottom 300ms ease-in, transform 300ms 300ms ease-in;
     }
   }
 
@@ -67,7 +67,7 @@
     top: 50%;
     transform: translateY(-50%);
 
-    @include bp(10) {
+    @include bp(15) {
       display: none;
     }
   }

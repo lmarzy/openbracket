@@ -3,5 +3,52 @@
 // ========================================================================
 
 .c-siteNav {
-  display: none;
+  &_link {
+    display: block;
+  }
+
+  @include bp(15, max) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 spacer(3);
+    background: darken($col-d, 60);
+    transform: translateX(100%);
+
+    &_link {
+      @include vr(18px, 2, 0);
+      color: white;
+
+      &:hover {
+        color: $col-a;
+      }
+    }
+  }
+
+  @include bp(15) {
+    &_items {
+      display: flex;
+    }
+
+    &_item {
+      border-left: 1px solid darken($col-d, 5);
+    }
+
+    &_link {
+      padding: 0 spacer(2);
+      @include vr(16px, 2);
+      color: $col-b;
+
+      &:hover {
+        background: $col-c;
+        color: white;
+      }
+    }
+  }
+
+  .l-siteHeader & {
+    margin-left: auto;
+  }
 }
