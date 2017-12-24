@@ -9,5 +9,9 @@
   color: transparent;
   letter-spacing: 2px;
 
-  @include vr(22px, 2);
+  @include vr(18px, 2);
+
+  @include bp(10) {
+    @include vr(22px, 2);
+  }
 }
