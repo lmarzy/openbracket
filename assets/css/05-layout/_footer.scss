@@ -2,8 +2,9 @@
 // LAYOUT/FOOTER
 // ========================================================================
 
-// 07/COMPONENTS - SITE-FOOTER
-
-/* stylelint-disable */
-.l-site-footer {}
-/* stylelint-enable */
+.l-siteFooter {
+  padding: spacer(2);
+  text-align: center;
+  background: white;
+  border-top: 1px solid $col-border;
+}

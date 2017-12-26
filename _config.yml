@@ -33,3 +33,13 @@ exclude:
 # Keep
 keep_files:
   - assets
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: Lee Marsden
+      comments: true

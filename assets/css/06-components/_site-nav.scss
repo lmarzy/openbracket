@@ -19,10 +19,10 @@
 
     &_link {
       @include vr(18px, 2, 0);
-      color: white;
+      color: $col-a;
 
       &:hover {
-        color: $col-a;
+        color: white;
       }
     }
   }
@@ -33,16 +33,17 @@
     }
 
     &_item {
-      border-left: 1px solid darken($col-d, 5);
+      border-left: 1px solid $col-border;
     }
 
     &_link {
-      padding: 0 spacer(2);
-      @include vr(16px, 2);
-      color: $col-b;
+      padding: 0 spacer(3);
+      @include vr(16px, 3);
+      color: $col-text;
+      transition: background-color 200ms ease-in;
 
       &:hover {
-        background: $col-c;
+        background-color: $col-c;
         color: white;
       }
     }

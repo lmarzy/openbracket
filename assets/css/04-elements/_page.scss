@@ -35,5 +35,9 @@ body {
 }
 
 main {
-  background: $col-d;
+  padding: spacer(2);
+
+  @include bp(10) {
+    padding: spacer(4);
+  }
 }

@@ -1,10 +1,8 @@
 // ========================================================================
-// LAYOUT/IMPORTS
+// COMPONENTS/POST
 // ========================================================================
 
-@import 'container';
-// @import 'grid';
-@import 'header';
-@import 'footer';
-@import 'page-home';
-@import 'post-list';
+.c-post {
+  font-size: 18px;
+  line-height: 1.5;
+}

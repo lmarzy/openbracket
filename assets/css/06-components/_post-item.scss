@@ -3,10 +3,41 @@
 // ========================================================================
 
 .c-postItem {
-  padding: spacer(2);
+  display: block;
   background: white;
-  border-width: 1px;
+  border-width: 1px 1px 1px 4px;
   border-style: solid;
+  color: $col-text;
+  transition: transform 150ms ease-in;
+
+  &_title {
+    padding: spacer(2);
+    font-size: 22px;
+    border-bottom: 1px solid $col-border;
+  }
+
+  &_body {
+    padding: spacer(2);
+  }
+
+  &_footer {
+    padding: spacer(1) spacer(2);
+    border-top: 1px solid $col-border;
+  }
+
+  &_meta {
+    font-size: font-size(s);
+    color: lighten($col-text, 25);
+    text-transform: uppercase;
+  }
+
+  &_author {
+    color: $col-c;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+  }
 
   &-html {
     border-color: $col-html;

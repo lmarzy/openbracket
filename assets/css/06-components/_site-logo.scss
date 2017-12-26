@@ -3,15 +3,20 @@
 // ========================================================================
 
 .c-siteLogo {
+  display: block;
   font-family: Monaco, Courier New, monospace;
-  background-image: linear-gradient(to right, darken($col-b, 10), $col-c);
+  background-image: linear-gradient(to right, $col-text, lighten($col-text, 25));
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
 
+  &:hover {
+    background-image: linear-gradient(to right, lighten($col-text, 25), $col-text);
+  }
+
   @include vr(18px, 2);
 
   @include bp(10) {
-    @include vr(22px, 2);
+    @include vr(22px, 3);
   }
 }

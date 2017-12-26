@@ -6,5 +6,6 @@
   position: relative;
   display: flex;
   padding-left: spacer(2);
+  background: white;
   z-index: index($z-index, header);
 }

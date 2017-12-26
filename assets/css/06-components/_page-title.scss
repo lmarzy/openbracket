@@ -9,7 +9,7 @@
   color: white;
   overflow: hidden;
 
-  @include vr(font-size(l), 2);
+  @include vr(font-size(m), 2);
 
   &::before {
     content: '';

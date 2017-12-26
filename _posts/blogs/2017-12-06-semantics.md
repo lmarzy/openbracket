@@ -1,5 +1,5 @@
 ---
-type: tip
+type: blog
 category: html
 ---
 
