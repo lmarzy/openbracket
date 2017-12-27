@@ -15,17 +15,7 @@
 
   {% include site-header.html %}
 
-    <section>
-      <h2 class="c-pageTitle">
-        {% if page.pageTitle %}
-          {{ page.pageTitle }}
-        {% else %}
-          {{ page.title}}
-        {% endif %}
-      </h2>
-
-      {{ content }}
-    </section>
+  {{ content }}
 
   {% include site-footer.html %}
 

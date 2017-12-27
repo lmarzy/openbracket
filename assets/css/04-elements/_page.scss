@@ -35,7 +35,7 @@ body {
 }
 
 main {
-  padding: spacer(2);
+  padding: spacer(3) spacer(2);
 
   @include bp(10) {
     padding: spacer(4);

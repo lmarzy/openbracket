@@ -5,11 +5,10 @@
 .l-pageHome {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: spacer(3);
 
   &_latest {
-    padding: spacer(2);
-    background: $col-d;
+    padding: spacer(3);
+    background: darken($col-bg, 5);
   }
 
   @include bp(20) {

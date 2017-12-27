@@ -14,15 +14,16 @@
     left: 0;
     right: 0;
     padding: 0 spacer(3);
-    background: darken($col-d, 60);
+    background: white;
     transform: translateX(100%);
 
     &_link {
       @include vr(18px, 2, 0);
-      color: $col-a;
+      color: $col-b;
 
+      &.isActive,
       &:hover {
-        color: white;
+        color: $col-a;
       }
     }
   }
@@ -33,17 +34,20 @@
     }
 
     &_item {
-      border-left: 1px solid $col-border;
+      border-left: 1px solid darken($col-border, 10);
     }
 
     &_link {
       padding: 0 spacer(3);
       @include vr(16px, 3);
-      color: $col-text;
+      color: $col-a;
+      text-transform: uppercase;
+      border-left: 1px solid lighten($col-border, 10);
       transition: background-color 200ms ease-in;
 
+      &.isActive,
       &:hover {
-        background-color: $col-c;
+        background-color: $col-a;
         color: white;
       }
     }

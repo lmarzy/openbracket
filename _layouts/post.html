@@ -2,12 +2,26 @@
 layout: default
 ---
 
-<main class="l-container">
+<main>
 
-  <div class="c-post">
+  <div class="l-container">
 
-    {{ content }}
-    
+    <section class="c-post c-post-{{ page.category }}">
+
+      <header>
+          <h2 class="c-post_title c-post_title-{{ page.category }}">{{ page.title }}</h2>
+          <p class="c-post_meta">
+            Blog post by <span class="c-post_author">{{ page.author }}</span> on
+            <time datetime="{{ page.date | date: '%Y-%m-%d' }}" class="c-post_date">{{ page.date | date: "%d %b %Y" }}
+          </p>
+      </header>
+
+      <div class="c-post_body">
+        {{ content }}
+      </div>
+      
+    </section>
+
   </div>
 
 </main>

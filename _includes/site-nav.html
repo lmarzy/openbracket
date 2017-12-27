@@ -1,9 +1,15 @@
 <nav id="js-siteNav" class="c-siteNav">
   <ul class="c-siteNav_items">
     {% for link in site.data.site-nav %}
-    <li class="c-siteNav_item">
-        <a href="{{ link.url }}.html" class="c-siteNav_link">{{ link.name }}</a>
-    </li>
+      {% assign pageUrl = page.url | replace:'/', ' ' | truncatewords: 1, "" %}
+      {% assign linkUrl = link.url | replace:'/', ' ' | truncatewords: 1, "" %}
+      {% assign current = '' %}
+      {% if pageUrl == linkUrl %}
+        {% assign current = 'isActive' %}
+      {% endif %}
+        <li class="c-siteNav_item">
+            <a href="{{ link.url }}" class="c-siteNav_link {{ current }}">{{ link.name }}</a>
+        </li>
     {% endfor %}
   </ul>
 </nav>

@@ -3,6 +3,70 @@
 // ========================================================================
 
 .c-post {
-  font-size: 18px;
-  line-height: 1.5;
+  background: white;
+  border-width: 1px;
+  border-style: solid;
+
+  &_title {
+    padding-left: spacer(2);
+    padding-right: spacer(2);
+    @include vr(38px, 2);
+    color: white;
+    overflow: hidden;
+
+    &-html {
+      background: linear-gradient(to right, $col-html, lighten($col-html, 15));
+    }
+
+    &-css {
+      background: linear-gradient(to right, $col-css, lighten($col-css, 15));
+    }
+
+    &-js {
+      background: linear-gradient(to right, $col-js, lighten($col-js, 15));
+    }
+
+    &-misc {
+      background: linear-gradient(to right, $col-misc, lighten($col-misc, 15));
+    }
+  }
+
+  &_meta {
+    padding: spacer(2);
+    background: darken($col-bg, 10);
+    font-size: 14px;
+  }
+
+  &_author,
+  &_date {
+    color: darken($col-text, 20);
+  }
+
+  &_body {
+    padding: spacer(3);
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  &-html {
+    border-color: lighten($col-html, 15);
+  }
+
+  &-css {
+    border-color: lighten($col-css, 15);
+  }
+
+  &-js {
+    border-color: lighten($col-js, 15);
+  }
+
+  &-misc {
+    border-color: lighten($col-misc, 15);
+  }
+
+  @include bp(10) {
+    &_body {
+      padding: spacer(4);
+    }
+  }
 }

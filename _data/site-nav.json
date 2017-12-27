@@ -1,14 +1,14 @@
 [
   {
     "name": "Posts",
-    "url": "/index"
+    "url": "/index.html"
   },
   {
     "name": "Tips N Tricks",
-    "url": "/tipsntricks"
+    "url": "/tipsntricks.html"
   },
   {
     "name": "Examples",
-    "url": "/examples"
+    "url": "/examples.html"
   }
 ]

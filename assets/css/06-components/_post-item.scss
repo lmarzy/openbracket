@@ -4,16 +4,17 @@
 
 .c-postItem {
   display: block;
-  background: white;
-  border-width: 1px 1px 1px 4px;
+  background: $col-b;
+  border-width: 2px 2px 2px 4px;
   border-style: solid;
-  color: $col-text;
+  border-color: darken($col-border, 5);
+  color: lighten($col-b, 65);
   transition: transform 150ms ease-in;
 
   &_title {
     padding: spacer(2);
     font-size: 22px;
-    border-bottom: 1px solid $col-border;
+    border-bottom: 1px solid darken($col-border, 5);
   }
 
   &_body {
@@ -22,7 +23,7 @@
 
   &_footer {
     padding: spacer(1) spacer(2);
-    border-top: 1px solid $col-border;
+    border-top: 1px solid darken($col-border, 5);
   }
 
   &_meta {
@@ -32,7 +33,7 @@
   }
 
   &_author {
-    color: $col-c;
+    color: white;
   }
 
   &:hover {
@@ -40,11 +41,11 @@
   }
 
   &-html {
-    border-color: $col-html;
+    border-left-color: $col-html;
   }
 
   &-css {
-    border-color: $col-css;
+    border-left-color: $col-css;
   }
 
   &-js {

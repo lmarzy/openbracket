@@ -3,9 +3,9 @@
     {% if post.type == 'blog' %}
       <li class="l-postList_item">
         <article>
-          <a href="{{ post.url }}.html" class="c-postItem c-postItem-{{ post.category }}">
+          <a href="{{ post.url }}" class="c-postItem c-postItem-{{ post.category }}">
             <h3 class="c-postItem_title">{{ post.title }}</h3>
-            <p class="c-postItem_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, minus.</p>
+            <p class="c-postItem_body">{{ post.excerpt | remove: '<p>' | remove: '</p>' | truncatewords: 25 }}</p>
             <footer class="c-postItem_footer">
               <p class="c-postItem_meta">
                 <time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="c-post__date c-date">{{ post.date | date: "%d %b %Y" }}
