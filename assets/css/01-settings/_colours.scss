@@ -4,18 +4,20 @@
 
 // PAGE
 $col-bg             : #3c3b45;
-$col-text           : white;
+$col-text           : #7e8796;
+$col-text-light     : #d6d5d6;
+$col-text-dark      : #757d88;
 
 // LINKS
-$col-links          : rgb(5, 94, 219);
-$col-links-hover    : rgb(5, 42, 161);
+$col-links          : #77a9a0;
+$col-links-hover    : darken($col-links, 10);
 
 // MISC
 $col-border         : #24232b;
 
 // Branding
 $col-a              : #77a9a0;
-$col-b              : #25242b;
+$col-b              : #2b2931;
 
 // Tech
 $col-html           : #fca140;

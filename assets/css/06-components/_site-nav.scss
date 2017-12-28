@@ -48,7 +48,7 @@
       &.isActive,
       &:hover {
         background-color: $col-a;
-        color: white;
+        color: $col-text-light;
       }
     }
   }

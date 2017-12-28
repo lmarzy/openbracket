@@ -5,13 +5,13 @@
 .c-siteLogo {
   display: block;
   font-family: Monaco, Courier New, monospace;
-  background-image: linear-gradient(to right, $col-text, lighten($col-bg, 35));
+  background-image: linear-gradient(to right, $col-a, $col-text-light);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
 
   &:hover {
-    background-image: linear-gradient(to right, lighten($col-bg, 35), $col-text);
+    background-image: linear-gradient(to right, $col-text-light, $col-a);
   }
 
   @include vr(18px, 2);

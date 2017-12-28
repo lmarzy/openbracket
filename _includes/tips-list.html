@@ -1,7 +1,7 @@
-<ul class="l-postList">
+<ul class="l-tipsList">
   {% for post in site.posts %}
-    {% if post.type == 'blog' %}
-      <li class="l-postList_item">
+    {% if post.type == 'tip' %}
+      <li class="l-tipsList_item">
         <article>
           <a href="{{ post.url }}" class="c-postItem c-postItem-{{ post.category }}">
             <h3 class="c-postItem_title">{{ post.title }}</h3>

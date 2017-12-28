@@ -8,17 +8,18 @@
   border-width: 2px 2px 2px 4px;
   border-style: solid;
   border-color: darken($col-border, 5);
-  color: lighten($col-b, 65);
   transition: transform 150ms ease-in;
 
   &_title {
     padding: spacer(2);
     font-size: 22px;
     border-bottom: 1px solid darken($col-border, 5);
+    color: $col-text-dark;
   }
 
   &_body {
     padding: spacer(2);
+    color: $col-text-light;
   }
 
   &_footer {
@@ -28,10 +29,11 @@
 
   &_meta {
     font-size: font-size(s);
-    color: lighten($col-text, 25);
     text-transform: uppercase;
+    color: $col-text-light;
   }
 
+  &_date,
   &_author {
     color: white;
   }
