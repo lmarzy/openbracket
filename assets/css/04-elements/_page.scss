@@ -20,7 +20,8 @@ html {
   font-size: $font-size;
   font-family: $font-family;
   line-height: $line-height;
-  color: $col-text-light;
+  font-weight: $font-weight-light;
+  color: $col-text;
   background-color: $col-bg;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -31,13 +32,5 @@ body {
 
   &.navActive {
     transform: translateX(-80%);
-  }
-}
-
-main {
-  padding: spacer(3) spacer(2);
-
-  @include bp(10) {
-    padding: spacer(4);
   }
 }

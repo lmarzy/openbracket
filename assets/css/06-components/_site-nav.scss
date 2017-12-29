@@ -7,53 +7,40 @@
     display: block;
   }
 
-  @include bp(15, max) {
+  @include bp(10, max) {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 0 spacer(3);
-    background: white;
+    background: $col-b;
     transform: translateX(100%);
 
-    &_link {
-      @include vr(18px, 2, 0);
-      color: $col-b;
-
-      &.isActive,
-      &:hover {
-        color: $col-a;
-      }
+    &_item {
+      padding: spacer(2);
     }
   }
 
-  @include bp(15) {
+  @include bp(10) {
     &_items {
       display: flex;
     }
 
-    &_item {
-      border-left: 1px solid darken($col-border, 10);
-    }
-
     &_link {
       padding: 0 spacer(3);
-      @include vr(16px, 3);
-      color: $col-a;
-      text-transform: uppercase;
-      border-left: 1px solid lighten($col-border, 10);
-      transition: background-color 200ms ease-in;
+      @include vr(20px, 4);
 
-      &.isActive,
       &:hover {
-        background-color: $col-a;
-        color: $col-text-light;
+        color: darken($col-link, 15);
+      }
+
+      &.isActive {
+        border-bottom: 4px solid $col-link;
       }
     }
-  }
 
-  .l-siteHeader & {
-    margin-left: auto;
+    .l-siteHeader & {
+      margin-left: auto;
+    }
   }
 }

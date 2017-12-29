@@ -3,20 +3,19 @@
 // ========================================================================
 
 // PAGE
-$col-bg             : #3c3b45;
-$col-text           : #7e8796;
-$col-text-light     : #d6d5d6;
-$col-text-dark      : #757d88;
+$col-bg             : #242425;
+$col-text           : #222;
+$col-text-dark      : #e5e5e5;
 
 // LINKS
-$col-links          : #77a9a0;
-$col-links-hover    : darken($col-links, 10);
+$col-link           : #03a9f4;
+$col-link-hover     : darken($col-link, 20);
 
 // MISC
 $col-border         : #24232b;
 
 // Branding
-$col-a              : #77a9a0;
+$col-a              : #fec96e;
 $col-b              : #2b2931;
 
 // Tech

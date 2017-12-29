@@ -13,5 +13,3 @@ $spacers: (
   $ranges: ($i + 1: $spacer * ($i + $i));
   $spacers: map-merge($spacers, $ranges);
 }
-
-@debug $spacers;

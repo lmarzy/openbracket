@@ -3,10 +3,8 @@
 // ========================================================================
 
 .l-siteHeader {
-  position: relative;
   display: flex;
-  padding-left: spacer(2);
-  background: $col-b;
-  border-bottom: 4px solid $col-a;
-  z-index: index($z-index, header);
+  position: relative;
+  padding-left: $gutter;
+  background: white;
 }

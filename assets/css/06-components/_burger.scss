@@ -17,7 +17,7 @@
     right: 4px;
     height: 4px;
     transform: translateY(-50%);
-    background-color: $col-a;
+    background-color: $col-link;
     border-radius: 4px;
     transition: transform 300ms 300ms ease-in;
   }
@@ -29,7 +29,7 @@
     left: 4px;
     right: 4px;
     height: 4px;
-    background-color: $col-a;
+    background-color: $col-link;
     border-radius: 4px;
     transition: top 300ms 300ms ease-in, bottom 300ms 300ms ease-in, transform 300ms ease-in;
   }
@@ -40,6 +40,11 @@
 
   &::after {
     bottom: 0;
+  }
+
+  &:hover {
+    outline: 2px solid $col-link;
+    outline-offset: 5px;
   }
 
   &.isActive {
@@ -67,7 +72,7 @@
     top: 50%;
     transform: translateY(-50%);
 
-    @include bp(15) {
+    @include bp(10) {
       display: none;
     }
   }

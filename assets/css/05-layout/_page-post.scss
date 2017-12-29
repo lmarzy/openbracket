@@ -1,13 +1,17 @@
 // ========================================================================
-// LAYOUT/POST-LIST
+// PARTIALS/PAGE-POST
 // ========================================================================
 
-.l-postList {
+.l-pagePost {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: spacer(3);
 
-  @include bp(10) {
-    grid-template-columns: 1fr 1fr;
+  &_aside {
+    padding: spacer(3);
+    background: lighten($col-bg, 20);
+  }
+
+  @include bp(20) {
+    grid-template-columns: 3fr 1fr;
   }
 }
