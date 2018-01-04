@@ -4,4 +4,27 @@ title: home
 permalink: index.html
 ---
 
-Main content
+<div class="l-main">
+
+  <main class="l-main_content">
+
+    <div class="l-posts">
+
+      <div class="l-posts_count">
+        {% include post-count-list.html %}
+      </div>
+      
+      <div class="l-posts_posts">
+        {% include post-list.html %}
+      </div>
+
+    </div>
+
+  </main>
+
+  <aside class="l-main_aside">
+    Aside
+  </aside>
+
+</div>
+

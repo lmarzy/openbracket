@@ -1,0 +1,21 @@
+// ========================================================================
+// PARTIALS/POST-ITEMS
+// ========================================================================
+
+.l-posts {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  color: white;
+
+  &_count {
+    background: $col-c;
+  }
+
+  &_posts {
+    padding: spacer(3);
+  }
+
+  @include bp(10) {
+    grid-template-columns: auto 1fr;
+  }
+}

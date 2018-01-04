@@ -1,21 +1,23 @@
 <ul class="l-postList">
-  {% for post in site.posts %}
-    {% if post.type == 'blog' %}
-      <li class="l-postList_item">
-        <article>
-          <a href="{{ post.url }}" class="c-postItem c-postItem-{{ post.category }}">
-            <h3 class="c-postItem_title">{{ post.title }}</h3>
-            <p class="c-postItem_body">{{ post.excerpt | remove: '<p>' | remove: '</p>' | truncatewords: 25 }}</p>
-            <footer class="c-postItem_footer">
-              <p class="c-postItem_meta">
-                <time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="c-postItem_date">{{ post.date | date: "%d %b %Y" }}
-                </time>
-                by
-                <span class="c-postItem_author">{{ post.author }}</span></p>
-            </footer>
+  {% for post in site.categories.blog %}
+    <li class="l-postList_item">
+      <article class="c-postItem c-postItem-{{ post.categories[1] }}">
+        <h3 class="c-postItem_title">
+          <a href="{{ post.url }}" class="c-postItem_link">
+            {{ post.title }}
           </a>
-        </article>
-      </li>
-    {% endif %}
+        </h3>
+        <p class="c-postItem_body">{{ post.excerpt | remove: '<p>' | remove: '</p>' | truncatewords: 25 }}</p>
+        <footer class="c-postItem_footer">
+          <p class="c-postItem_meta">
+            <time
+              datetime="{{ post.date | date: '%Y-%m-%d' }}"
+              class="c-postItem_date">{{ post.date | date: "%d %b %Y" }}
+            </time>
+            by
+            <span class="c-postItem_author">{{ post.author }}</span></p>
+        </footer>
+      </article>
+    </li>
   {% endfor %}
 </ul>

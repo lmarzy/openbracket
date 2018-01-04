@@ -1,0 +1,61 @@
+// ========================================================================
+// COMPONENTS/POST-COUNT
+// ========================================================================
+
+.c-postCount {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
+  background: none;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: opacity 250ms ease-in;
+
+  &_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200%;
+    transform: translateX(25%);
+    transition: transform 250ms ease-in;
+  }
+
+  span {
+    flex: 1 0 100%;
+  }
+
+  &_no {
+    font-size: 16px;
+  }
+
+  &_text {
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    opacity: 1;
+
+    .c-postCount_inner {
+      transform: translateX(-75%);
+    }
+  }
+
+  &-html {
+    color: $col-html;
+    border-color: $col-html;
+  }
+
+  &-css {
+    color: $col-css;
+    border-color: $col-css;
+  }
+
+  &-js {
+    color: $col-js;
+    border-color: $col-js;
+  }
+}

@@ -1,0 +1,53 @@
+// ========================================================================
+// COMPONENTS/POST-ITEM
+// ========================================================================
+
+.c-postItem {
+  background: white;
+  border-left-width: 4px;
+  border-left-style: solid;
+  color: $col-text;
+
+  &_title {
+    @include vr(30px, 2);
+    border-bottom: 1px solid lighten($col-border, 75);
+  }
+
+  &_link {
+    display: block;
+    padding: 0 spacer(2);
+    color: $col-text;
+
+    &:hover {
+      color: $col-link;
+    }
+  }
+
+  &_body {
+    padding: spacer(3) spacer(2);
+  }
+
+  &_meta {
+    padding: spacer(1) spacer(2);
+    background: lighten($col-b, 75);
+    font-size: 14px;
+  }
+
+  &-html {
+    border-left-color: $col-html;
+  }
+
+  &-css {
+    border-left-color: $col-css;
+  }
+
+  &-js {
+    border-left-color: $col-js;
+  }
+
+  @include bp(10) {
+    &_title {
+      @include vr(40px, 2);
+    }
+  }
+}

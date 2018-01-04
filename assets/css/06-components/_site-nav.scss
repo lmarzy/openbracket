@@ -27,6 +27,7 @@
     }
 
     &_link {
+      position: relative;
       padding: 0 spacer(3);
       @include vr(20px, 4);
 
@@ -35,7 +36,17 @@
       }
 
       &.isActive {
-        border-bottom: 4px solid $col-link;
+        color: darken($col-link, 15);
+
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 4px;
+          background: $col-link;
+        }
       }
     }
 

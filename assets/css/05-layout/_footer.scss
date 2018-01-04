@@ -3,5 +3,7 @@
 // ========================================================================
 
 .l-siteFooter {
+  background: radial-gradient(ellipse at center, lighten($col-bg, 30), lighten($col-bg, 10));
   text-align: center;
+  color: darken($col-text, 20);
 }

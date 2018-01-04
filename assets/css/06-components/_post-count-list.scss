@@ -1,0 +1,18 @@
+// ========================================================================
+// COMPONENTS/POST-COUNT-LIST
+// ========================================================================
+
+.c-postCountList {
+  display: flex;
+
+  &_item {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: spacer(2);
+  }
+
+  @include bp(10) {
+    flex-direction: column;
+  }
+}
