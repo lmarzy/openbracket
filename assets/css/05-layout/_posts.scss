@@ -17,5 +17,9 @@
 
   @include bp(10) {
     grid-template-columns: auto 1fr;
+
+    &_count {
+      padding-top: spacer(2);
+    }
   }
 }

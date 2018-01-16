@@ -1,0 +1,21 @@
+// ========================================================================
+// COMPONENTS/LATEST-TITLE
+// ========================================================================
+
+.c-latest {
+  padding: spacer(2);
+  background: linear-gradient(rgba(white, 0.8), rgba(white, 0.6));
+  border-radius: 3px;
+
+  &_title {
+    margin-bottom: spacer(2);
+    padding-bottom: spacer(1);
+    border-bottom: 1px solid lighten($col-text, 50);
+  }
+
+  @include bp(10) {
+    &_title {
+      font-size: 20px;
+    }
+  }
+}

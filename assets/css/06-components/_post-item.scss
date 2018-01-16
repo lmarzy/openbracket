@@ -3,20 +3,20 @@
 // ========================================================================
 
 .c-postItem {
-  background: white;
+  background: $col-b;
   border-left-width: 4px;
   border-left-style: solid;
-  color: $col-text;
+  color: $col-text-dark;
 
   &_title {
-    @include vr(30px, 2);
-    border-bottom: 1px solid lighten($col-border, 75);
+    @include vr(22px, 2);
+    border-bottom: 1px solid $col-border;
   }
 
   &_link {
     display: block;
     padding: 0 spacer(2);
-    color: $col-text;
+    color: $col-text-dark;
 
     &:hover {
       color: $col-link;
@@ -29,7 +29,7 @@
 
   &_meta {
     padding: spacer(1) spacer(2);
-    background: lighten($col-b, 75);
+    background: $col-c;
     font-size: 14px;
   }
 
@@ -47,7 +47,7 @@
 
   @include bp(10) {
     &_title {
-      @include vr(40px, 2);
+      @include vr(24px, 2);
     }
   }
 }

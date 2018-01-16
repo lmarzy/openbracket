@@ -1,0 +1,64 @@
+// ========================================================================
+// COMPONENTS/POST
+// ========================================================================
+
+.c-post {
+  border-left-width: 5px;
+  border-left-style: solid;
+
+  &-html {
+    border-left-color: $col-html;
+  }
+
+  &-css {
+    border-left-color: $col-css;
+  }
+
+  &-js {
+    border-left-color: $col-js;
+  }
+
+  &_header {
+    background: linear-gradient(to right, $col-c, $col-b);
+  }
+
+  &_title,
+  &_meta {
+    padding-left: spacer(2);
+    padding-right: spacer(2);
+    color: $col-text-dark;
+  }
+
+  &_title {
+    @include vr(26px, 2);
+  }
+
+  &_meta {
+    background: $col-b;
+    color: white;
+    @include vr(14px, 2);
+  }
+
+  &_body {
+    padding: spacer(2);
+    background-color: white;
+  }
+
+  @include bp(10) {
+    &_title {
+      @include vr(42px, 2);
+    }
+
+    &_title,
+    &_meta {
+      padding-left: spacer(3);
+      padding-right: spacer(3);
+    }
+
+    &_body {
+      padding: spacer(4);
+      font-size: 20px;
+    }
+  }
+}
+

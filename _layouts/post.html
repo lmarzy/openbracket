@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="l-main">
+
+  <main class="l-main_content">
+
+    <section class="c-post c-post-{{ page.categories[1] }}">
+
+      <header class="c-post_header">
+        <h2 class="c-post_title">{{ page.title }}</h2>
+        <p class="c-post_meta">
+          Blog post by
+          {{ page.author }}
+          <time
+            datetime="{{ page.date | date: '%Y-%m-%d' }}"
+            class="c-post_date">{{ page.date | date: "%d %b %Y" }}
+          </time>
+        </p>
+      </header>
+
+      <div class="c-post_body">
+        {{ content }}
+      </div>
+
+    </section>
+
+  </main>
+
+  <aside class="l-main_aside">
+    Aside
+  </aside>
+
+</div>

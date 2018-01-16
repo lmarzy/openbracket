@@ -40,6 +40,6 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "default"
+      layout: "post"
       author: Lee Marsden
       comments: true

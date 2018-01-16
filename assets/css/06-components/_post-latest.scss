@@ -1,0 +1,23 @@
+// ========================================================================
+// COMPONENTS/POST-LATEST
+// ========================================================================
+
+.c-postLatest {
+  &_item:not(:last-child) {
+    margin-bottom: spacer(1);
+  }
+
+  &_link {
+    display: block;
+
+    &:hover {
+      color: darken($col-link, 10);
+    }
+  }
+
+  &_date {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: darken($col-text, 20);
+  }
+}
