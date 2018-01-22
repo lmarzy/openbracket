@@ -10,4 +10,8 @@
   @include bp(10) {
     grid-template-columns: repeat(auto-fit, minmax(340px, auto));
   }
+
+  > .isHidden {
+    display: none;
+  }
 }

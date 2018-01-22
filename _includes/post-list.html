@@ -1,6 +1,6 @@
 <ul class="l-postList">
   {% for post in site.categories.blog %}
-    <li class="l-postList_item is-{{ post.categories[1] }}">
+    <li class="l-postList_item {{ post.categories[1] }}">
       <article class="c-postItem c-postItem-{{ post.categories[1] }}">
         <h3 class="c-postItem_title">
           <a href="{{ post.url }}" class="c-postItem_link">
