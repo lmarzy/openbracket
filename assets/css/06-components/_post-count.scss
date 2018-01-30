@@ -25,6 +25,7 @@
 
   span {
     flex: 1 0 100%;
+    pointer-events: none;
   }
 
   &_no {
@@ -42,6 +43,11 @@
     .c-postCount_inner {
       transform: translateX(-75%);
     }
+  }
+
+  &-all {
+    color: white;
+    border-color: lighten($col-c, 40);
   }
 
   &-html {

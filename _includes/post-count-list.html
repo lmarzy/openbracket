@@ -1,8 +1,16 @@
 <ul class="c-postCountList">
   <li class="c-postCountList_item">
+    <button type="button" id="all" class="c-postCount c-postCount-all">
+      <span class="c-postCount_inner">
+        <span class="c-postCount_no">{{ site.categories.blog | size }}</span>
+        <span class="c-postCount_text">All</span>
+      </span>
+    </button>
+  </li>
+  <li class="c-postCountList_item">
     <button type="button" id="html" class="c-postCount c-postCount-html">
       <span class="c-postCount_inner">
-        <span class="c-postCount_no">{{ site.categories.html | size }}</span>
+        <span class="c-postCount_no">{{ site.categories.blog-html | size }}</span>
         <span class="c-postCount_text">html</span>
       </span>
     </button>
@@ -10,7 +18,7 @@
   <li class="c-postCountList_item">
     <button type="button" id="css" class="c-postCount c-postCount-css">
       <span class="c-postCount_inner">
-        <span class="c-postCount_no">{{ site.categories.css | size }}</span>
+        <span class="c-postCount_no">{{ site.categories.blog-css | size }}</span>
         <span class="c-postCount_text">css</span>
       </span>
     </button>
@@ -18,7 +26,7 @@
   <li class="c-postCountList_item">
     <button type="button" id="js" class="c-postCount c-postCount-js">
       <span class="c-postCount_inner">
-        <span class="c-postCount_no">{{ site.categories.js | size }}</span>
+        <span class="c-postCount_no">{{ site.categories.blog-js | size }}</span>
         <span class="c-postCount_text">js</span>
       </span>
     </button>
