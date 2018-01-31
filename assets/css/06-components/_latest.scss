@@ -3,13 +3,13 @@
 // ========================================================================
 
 .c-latest {
-  padding: spacer(2);
-  background: linear-gradient(rgba(white, 0.8), rgba(white, 0.6));
-  border-radius: 3px;
+  background: rgba(white, 0.8);
+  border-radius: 4px;
+  overflow: hidden;
 
   &_title {
-    margin-bottom: spacer(2);
-    padding-bottom: spacer(1);
+    padding: spacer(2);
+    color: lighten($col-text, 15);
     border-bottom: 1px solid lighten($col-text, 50);
   }
 

@@ -1,5 +1,7 @@
 ---
-categories: example
+categories:
+- examples
+- css
 ---
 
 Example CSS

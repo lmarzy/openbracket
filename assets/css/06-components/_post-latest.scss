@@ -3,12 +3,19 @@
 // ========================================================================
 
 .c-postLatest {
-  &_item:not(:last-child) {
-    margin-bottom: spacer(1);
+  &_item {
+    padding: spacer(1) spacer(2);
+    background: lighten($col-b, 45);
+    margin-bottom: 1px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &_link {
     display: block;
+    color: lighten($col-a, 10);
 
     &:hover {
       color: darken($col-link, 10);
@@ -16,8 +23,8 @@
   }
 
   &_date {
-    font-size: 12px;
+    font-size: 11px;
     text-transform: uppercase;
-    color: darken($col-text, 20);
+    color: lighten($col-text, 10);
   }
 }
