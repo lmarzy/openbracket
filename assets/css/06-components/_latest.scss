@@ -3,14 +3,14 @@
 // ========================================================================
 
 .c-latest {
-  background: rgba(white, 0.8);
+  background: $col-b;
+  border: 1px solid $col-b;
   border-radius: 4px;
   overflow: hidden;
 
   &_title {
     padding: spacer(2);
-    color: lighten($col-text, 15);
-    border-bottom: 1px solid lighten($col-text, 50);
+    color: darken($col-text-dark, 10);
   }
 
   @include bp(10) {

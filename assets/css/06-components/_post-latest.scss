@@ -4,8 +4,7 @@
 
 .c-postLatest {
   &_item {
-    padding: spacer(1) spacer(2);
-    background: lighten($col-b, 45);
+    background-color: lighten($col-b, 15);
     margin-bottom: 1px;
 
     &:last-child {
@@ -15,16 +14,24 @@
 
   &_link {
     display: block;
-    color: lighten($col-a, 10);
+    padding: spacer(1) spacer(2);
+    color: black;
+    font-weight: 400;
+    transition: background-color 200ms ease-in, color 200ms ease-in;
 
     &:hover {
-      color: darken($col-link, 10);
+      background-color: lighten($col-b, 12);
+      color: $col-link;
     }
+  }
+
+  &_title {
+    display: block;
   }
 
   &_date {
     font-size: 11px;
     text-transform: uppercase;
-    color: lighten($col-text, 10);
+    color: darken($col-text-dark, 25);
   }
 }
