@@ -3,6 +3,9 @@
 // ========================================================================
 
 .c-postItem {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background: $col-b;
   border-left-width: 4px;
   border-left-style: solid;
@@ -25,6 +28,10 @@
 
   &_body {
     padding: spacer(3) spacer(2);
+  }
+
+  &_footer {
+    margin-top: auto;
   }
 
   &_meta {

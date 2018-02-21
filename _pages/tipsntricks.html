@@ -3,3 +3,27 @@ layout: default
 title: tips and tricks
 permalink: tipsntricks.html
 ---
+
+<div class="l-main">
+
+  <main class="l-main_content">
+
+    <div class="l-posts">
+
+      <div class="l-posts_count">
+        {% include post-count-list.html %}
+      </div>
+      
+      <div class="l-posts_posts">
+        {% include post-list.html type="tip" %}
+      </div>
+
+    </div>
+
+  </main>
+
+  <aside class="l-main_aside">
+    {% include tips-latest.html %}
+  </aside>
+
+</div>

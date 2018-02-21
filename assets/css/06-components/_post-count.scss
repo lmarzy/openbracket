@@ -10,7 +10,7 @@
   border-style: solid;
   border-radius: 50%;
   background: none;
-  opacity: 0.4;
+  opacity: 0.2;
   overflow: hidden;
   transition: opacity 250ms ease-in;
 
@@ -37,7 +37,8 @@
     text-transform: uppercase;
   }
 
-  &:hover {
+  &:hover,
+  &.isActive {
     opacity: 1;
 
     .c-postCount_inner {
@@ -47,7 +48,7 @@
 
   &-all {
     color: white;
-    border-color: lighten($col-c, 40);
+    border-color: white;
   }
 
   &-html {
@@ -63,5 +64,10 @@
   &-js {
     color: $col-js;
     border-color: $col-js;
+  }
+
+  &-misc {
+    color: $col-misc;
+    border-color: $col-misc;
   }
 }

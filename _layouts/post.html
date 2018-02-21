@@ -29,7 +29,27 @@ layout: default
   </main>
 
   <aside class="l-main_aside">
-    Aside
+    
+    <div class="c-latest">
+
+      <h3 class="c-latest_title">Latest blog posts</h3>
+    
+      <ul class="c-postLatest">
+        {% for post in site.categories.blog limit:2 %}
+          <li class="c-postLatest_item">    
+            <a href="{{ post.url }}" class="c-postLatest_link">
+              <span class="c-postLatest_title">{{ post.title }}</span>
+              <time
+              datetime="{{ post.date | date: '%Y-%m-%d' }}"
+              class="c-postLatest_date">{{ post.date | date: "%d %b %Y" }}
+            </time>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    
+    </div>
+
   </aside>
 
 </div>

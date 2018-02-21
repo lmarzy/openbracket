@@ -1,33 +1,46 @@
 <ul class="c-postCountList">
+  {% assign type = {{include.type}} %}
+  {% assign typeHtml = type | append: '-html' %}
+  {% assign typeCss = type | append: '-css' %}
+  {% assign typeJs = type | append: '-js' %}
+  {% assign typeMisc = type | append: '-misc' %}
   <li class="c-postCountList_item">
-    <button type="button" id="all" class="c-postCount c-postCount-all">
+    <button type="button" id="all" class="c-postCount c-postCount-all js-postCount">
       <span class="c-postCount_inner">
-        <span class="c-postCount_no">{{ site.categories.blog | size }}</span>
+        <span class="c-postCount_no">{{ site.categories[type] | size }}</span>
         <span class="c-postCount_text">All</span>
       </span>
     </button>
   </li>
-  <li class="c-postCountList_item">
+  <!-- <li class="c-postCountList_item">
     <button type="button" id="html" class="c-postCount c-postCount-html">
       <span class="c-postCount_inner">
-        <span class="c-postCount_no">{{ site.categories.blog-html | size }}</span>
+        <span class="c-postCount_no">{{ site.categories[typeHtml] | size }}</span>
         <span class="c-postCount_text">html</span>
       </span>
     </button>
-  </li>
+  </li> -->
   <li class="c-postCountList_item">
-    <button type="button" id="css" class="c-postCount c-postCount-css">
+    <button type="button" id="css" class="c-postCount c-postCount-css js-postCount">
       <span class="c-postCount_inner">
-        <span class="c-postCount_no">{{ site.categories.blog-css | size }}</span>
+        <span class="c-postCount_no">{{ site.categories[typeCss] | size }}</span>
         <span class="c-postCount_text">css</span>
       </span>
     </button>
   </li>
   <li class="c-postCountList_item">
-    <button type="button" id="js" class="c-postCount c-postCount-js">
+    <button type="button" id="js" class="c-postCount c-postCount-js js-postCount">
       <span class="c-postCount_inner">
-        <span class="c-postCount_no">{{ site.categories.blog-js | size }}</span>
+        <span class="c-postCount_no">{{ site.categories[typeJs] | size }}</span>
         <span class="c-postCount_text">js</span>
+      </span>
+    </button>
+  </li>
+  <li class="c-postCountList_item">
+    <button type="button" id="misc" class="c-postCount c-postCount-misc js-postCount">
+      <span class="c-postCount_inner">
+        <span class="c-postCount_no">{{ site.categories[typeMisc] | size }}</span>
+        <span class="c-postCount_text">misc</span>
       </span>
     </button>
   </li>

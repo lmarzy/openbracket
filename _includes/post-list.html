@@ -1,5 +1,6 @@
 <ul class="l-postList">
-  {% for post in site.categories.blog %}
+  {% assign type = {{include.type}} %}
+  {% for post in site.categories[type] %}
     <li class="l-postList_item {{ post.categories[1] }}">
       <article class="c-postItem c-postItem-{{ post.categories[1] }}">
         <h3 class="c-postItem_title">

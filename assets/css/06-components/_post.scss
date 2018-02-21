@@ -18,6 +18,10 @@
     border-left-color: $col-js;
   }
 
+  &-misc {
+    border-left-color: $col-misc;
+  }
+
   &_header {
     background: linear-gradient(to right, $col-c, $col-b);
   }
@@ -42,6 +46,10 @@
   &_body {
     padding: spacer(2);
     background-color: white;
+
+    p {
+      margin-bottom: spacer(3);
+    }
   }
 
   @include bp(10) {
@@ -57,7 +65,8 @@
 
     &_body {
       padding: spacer(4);
-      font-size: 20px;
+      font-size: 22px;
+      line-height: $line-height;
     }
   }
 }

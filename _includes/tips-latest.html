@@ -3,7 +3,7 @@
   <h3 class="c-latest_title">Latest Tips N Tricks</h3>
 
   <ul class="c-postLatest">
-    {% for post in site.categories.tips | limit:5 %}
+    {% for post in site.categories.tip limit:5 %}
       <li class="c-postLatest_item">    
         <a href="{{ post.url }}" class="c-postLatest_link">
           <span class="c-postLatest_title">{{ post.title }}</span>

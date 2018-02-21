@@ -6,9 +6,10 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: spacer(3);
+  grid-auto-rows: 1fr;
 
   @include bp(10) {
-    grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(420px, auto));
   }
 
   > .isHidden {
