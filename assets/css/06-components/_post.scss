@@ -34,13 +34,16 @@
   }
 
   &_title {
-    @include vr(26px, 2);
+    padding-top: spacer(2);
+    padding-bottom: spacer(2);
+    @include vr(22px, 1);
   }
 
   &_meta {
     background: $col-b;
-    color: white;
-    @include vr(14px, 2);
+    color: darken(white, 15);
+    @include vr(12px, 2);
+    text-transform: uppercase;
   }
 
   &_body {

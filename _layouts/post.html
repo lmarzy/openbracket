@@ -11,12 +11,12 @@ layout: default
       <header class="c-post_header">
         <h2 class="c-post_title">{{ page.title }}</h2>
         <p class="c-post_meta">
-          Blog post by
-          {{ page.author }}
           <time
             datetime="{{ page.date | date: '%Y-%m-%d' }}"
-            class="c-post_date">{{ page.date | date: "%d %b %Y" }}
+            class="c-post_date">{{ page.date | date: "%d %B %Y" }}
           </time>
+          by
+          {{ page.author }}
         </p>
       </header>
 
@@ -35,7 +35,7 @@ layout: default
       <h3 class="c-latest_title">Latest blog posts</h3>
     
       <ul class="c-postLatest">
-        {% for post in site.categories.blog limit:2 %}
+        {% for post in site.categories.blog limit:4 %}
           <li class="c-postLatest_item">    
             <a href="{{ post.url }}" class="c-postLatest_link">
               <span class="c-postLatest_title">{{ post.title }}</span>

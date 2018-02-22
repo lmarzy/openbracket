@@ -6,6 +6,11 @@
   display: grid;
   grid-template-columns: 1fr;
 
+  &_content,
+  &_aside {
+    min-width: 0;
+  }
+
   &_aside {
     padding: spacer(2);
     background: lighten($col-bg, 20);
