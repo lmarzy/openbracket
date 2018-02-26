@@ -1,8 +1,8 @@
 ---
 categories:
-- blog
+- tip
 - misc
-- blog-misc
+- tip-misc
 ---
 
 When starting a new project I often find I need to replicate one of my starter frameworks. This would typically mean creating the new repo, cloning and copying over all the files from another repo. 

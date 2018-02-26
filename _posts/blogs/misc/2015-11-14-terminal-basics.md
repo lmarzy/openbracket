@@ -7,7 +7,7 @@ categories:
 
 Terminal I hear you scream. But I can just point a click and things work. I actually find working in the terminal quite enjoyable, it makes me feel like some sort of computer wizard or something and look like I know what i'm doing to the less technical (sure fire way to impress the ladies :-)).
 
-Although I use the terminal on a regular basis I still feel I am just getting by, and just getting by is not quite good enough, I am going to document some of the basics of the terminal, well because I can and it would be good for mine or your future reference.
+Although I use the terminal on a regular basis I still feel I am just getting by, and just getting by is not quite good enough. I am going to document some of the basics of the terminal, well because I can and it would be good for your(or mine) future reference.
 
 So, The terminal is a text interface for your computer. It's a program that takes in commands, which it passes on to the computer's operating system to run.
 

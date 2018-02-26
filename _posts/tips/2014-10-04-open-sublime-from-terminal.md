@@ -1,8 +1,8 @@
 ---
 categories:
-- blog
+- tip
 - misc
-- blog-misc
+- tip-misc
 ---
 
 A quick tip on opening up Sublime text form the terminal, if your like me and spend a lot of time in the terminal and my favourite editor at the moment is sublime text. I find it really useful to be able to open up Sublime after I have browsed to the directory for the site I am working on and launching sublime with all my files ready.
