@@ -2,6 +2,7 @@
 categories:
 - blog
 - js
+tags: 
 - blog-js
 ---
 When adding properties to an object literal you would typically add them as follows:

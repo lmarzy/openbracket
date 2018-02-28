@@ -12,41 +12,41 @@
       </span>
     </button>
   </li>
-  {% if site.categories[typeHml] | size != '0' %}
+  {% if site.tags[typeHml] | size != '0' %}
   <li class="c-postCountList_item">
     <button type="button" id="html" class="c-postCount c-postCount-html">
       <span class="c-postCount_inner">
-        <span class="c-postCount_no">{{ site.categories[typeHtml] | size }}</span>
+        <span class="c-postCount_no">{{ site.tags[typeHtml] | size }}</span>
         <span class="c-postCount_text">html</span>
       </span>
     </button>
   </li>
   {% endif %}
-  {% if site.categories[typeCss] | size != '0' %}
+  {% if site.tags[typeCss] | size != '0' %}
   <li class="c-postCountList_item">
     <button type="button" id="css" class="c-postCount c-postCount-css js-postCount">
       <span class="c-postCount_inner">
-        <span id="js-postCountNo" class="c-postCount_no">{{ site.categories[typeCss] | size }}</span>
+        <span id="js-postCountNo" class="c-postCount_no">{{ site.tags[typeCss] | size }}</span>
         <span class="c-postCount_text">css</span>
       </span>
     </button>
   </li>
   {% endif %}
-  {% if site.categories[typeJs] | size != '0' %}
+  {% if site.tags[typeJs] | size != '0' %}
   <li class="c-postCountList_item">
     <button type="button" id="js" class="c-postCount c-postCount-js js-postCount">
       <span class="c-postCount_inner">
-        <span class="c-postCount_no">{{ site.categories[typeJs] | size }}</span>
+        <span class="c-postCount_no">{{ site.tags[typeJs] | size }}</span>
         <span class="c-postCount_text">js</span>
       </span>
     </button>
   </li>
   {% endif %}
-  {% if site.categories[typeMisc] | size != '0' %}
+  {% if site.tags[typeMisc] | size != '0' %}
   <li class="c-postCountList_item">
     <button type="button" id="misc" class="c-postCount c-postCount-misc js-postCount">
       <span class="c-postCount_inner">
-        <span class="c-postCount_no">{{ site.categories[typeMisc] | size }}</span>
+        <span class="c-postCount_no">{{ site.tags[typeMisc] | size }}</span>
         <span class="c-postCount_text">misc</span>
       </span>
     </button>

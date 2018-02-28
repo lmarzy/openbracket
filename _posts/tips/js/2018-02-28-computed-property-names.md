@@ -2,6 +2,7 @@
 categories:
 - tip
 - js
+tags: 
 - tip-js
 ---
 

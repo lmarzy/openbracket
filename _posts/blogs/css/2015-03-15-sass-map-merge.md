@@ -3,6 +3,8 @@ categories:
 - blog
 - css
 - blog-css
+tags: 
+- blog-css
 ---
 
 Maps are a great feature of Sass allowing me to store configuration data and values in an easily accessible way. I was recently working on a site where I was sharing a Sass directory allowing me to have multiple sites based off of the same core css instead of copying and pasting the same code over and over.

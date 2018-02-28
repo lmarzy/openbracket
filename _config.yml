@@ -13,7 +13,7 @@ github_username:  lmarzy
 markdown: kramdown
 plugins:
   - jekyll-feed
-permalink: /posts/:categories/:title.html
+permalink: /:categories/:title.html
 
 include: ["_pages"]
 
