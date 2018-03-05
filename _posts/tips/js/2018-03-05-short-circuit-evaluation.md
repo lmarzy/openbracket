@@ -6,8 +6,6 @@ tags:
 - tip-js
 ---
 
-Short circuit evaluation
-
 Short-circuiting in Javascript is a way for the Javascript engine to increase performance. Before we get into some examples. let's first review how the logical AND (&&) and logical OR (\|\|) work.
 
 Logical AND (&&)

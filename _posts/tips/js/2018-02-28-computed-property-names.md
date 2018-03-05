@@ -6,8 +6,6 @@ tags:
 - tip-js
 ---
 
-Computed property names
-
 Let's say we had a function called ‘objecty’ which has two parameters called ‘key’ and ‘value’. This function is going to return a new object with the key being the key on the object and value being the value (obviously). Before ES6, this is how we would achieve this:
 
 {% highlight javascript %}
