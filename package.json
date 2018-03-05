@@ -24,7 +24,7 @@
     "htmlMin": "html-minifier --input-dir dist --output-dir dist --collapse-whitespace --file-ext html",
     "postcss:csso": "postcss -u postcss-csso -r dist/assets/*.css --no-map",
     "uglify": "uglifyjs dist/assets/*.js -m -c -o dist/assets/*.js",
-    "watch:html": "onchange '_includes/*.html' '_layouts/*.html' '_pages/*.html' '_posts/**/*.html' -- yarn run jekyll:incremental",
+    "watch:html": "onchange '_includes/*.html' '_layouts/*.html' '_pages/*.html' '_posts/**/**/*.md' -- yarn run jekyll:incremental",
     "watch:css": "onchange 'assets/css/**/*.scss' -- yarn run build:css",
     "watch:js": "onchange 'assets/js/**/*.js' -- yarn run js",
     "build": "yarn run clean && parallelshell 'yarn run jekyll' 'yarn run stylelint' 'yarn run build:css' 'yarn run js' 'yarn run images'",
